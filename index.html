@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsPaper Website</title>
+    <!-- daisy cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div id="tab-container" class="flex justify-center mt-12"></div>
+    </header>
+    <main>
+      <div
+        id="card-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5"
+      ></div>
+      <div>
+        <!-- Open the modal using ID.showModal() method -->
+        <button onclick="newsDetailsModal.showModal()"></button>
+        <div id="modal-container"></div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
